@@ -82,6 +82,7 @@ button:hover {
   cursor: pointer;
   padding:0px 10px;
   user-select: none;
+  pointer-events: none;
   color: #ccc;
 }
 .toggle-text:hover {

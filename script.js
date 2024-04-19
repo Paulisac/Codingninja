@@ -23,9 +23,9 @@ addBtn.addEventListener('click', () => {
         todoInput.value = '';
 
         // Enable toggle buttons once todo list is created
-        togglePending.disabled = false;
-        toggleCompleted.disabled = false;
-        toggleAll.disabled = false;
+        togglePending.style.pointerEvents = 'auto';
+        toggleCompleted.style.pointerEvents = 'auto';
+        toggleAll.style.pointerEvents = 'auto';
 
         // Preselect "All" button
         toggleAll.classList.add('selected');
@@ -34,6 +34,7 @@ addBtn.addEventListener('click', () => {
         toggleVisibility('all');
     }
 });
+
 
 togglePending.addEventListener('click', () => {
     togglePending.classList.add('selected');
